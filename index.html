@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luminy Studios</title>
+<meta name="description" content="Luminy Studios makes cozy, sensory apps that give a busy mind somewhere to settle.">
+<style>
+  :root{
+    --bg:#1c1814; --ink:#f1e8d8; --ink-2:#b3a797; --ink-3:#857b6d;
+    --card:#26211b; --line:rgba(255,238,210,.09); --line-hover:rgba(255,238,210,.2);
+    --light:#e6b56b;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.62; font-size:17px; display:flex; flex-direction:column;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:600px; width:100%; margin:0 auto; padding:104px 28px 48px; flex:1 0 auto;}
+
+  header{position:relative; text-align:center; margin-bottom:76px;}
+  .glow{
+    position:absolute; left:50%; top:18px; width:340px; height:340px;
+    transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; z-index:0;
+    background:radial-gradient(circle, rgba(230,181,107,.26) 0%, rgba(230,181,107,.10) 38%, rgba(230,181,107,0) 70%);
+    animation:breathe 8s ease-in-out infinite;
+  }
+  @keyframes breathe{
+    0%,100%{opacity:.7; transform:translate(-50%,-50%) scale(.92);}
+    50%{opacity:1; transform:translate(-50%,-50%) scale(1.06);}
+  }
+  @media (prefers-reduced-motion:reduce){ .glow{animation:none;} }
+  header > *{position:relative; z-index:1;}
+  .word{
+    font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+    font-weight:400; font-size:40px; letter-spacing:.01em; color:var(--ink); margin:0; line-height:1.12;
+  }
+  .tag{font-size:18px; color:var(--ink-2); margin:18px auto 0; max-width:28ch;}
+
+  .eyebrow{
+    font-family:ui-rounded,"SF Pro Rounded",-apple-system,sans-serif;
+    text-transform:uppercase; letter-spacing:.24em; font-size:12px; color:var(--ink-3); margin:0 0 16px;
+  }
+  .app{
+    display:block; text-decoration:none; color:inherit; margin-bottom:14px;
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:26px 28px; transition:border-color .2s ease, transform .2s ease;
+  }
+  .app:hover{border-color:var(--line-hover); transform:translateY(-1px);}
+  .app:focus-visible{outline:2px solid var(--light); outline-offset:3px;}
+  .app h2{
+    font-family:"Iowan Old Style",Palatino,Georgia,serif; font-weight:400; font-size:25px;
+    color:var(--ink); margin:0 0 9px;
+  }
+  .app p{margin:0; color:var(--ink-2); font-size:16px; line-height:1.6;}
+  .app .more{color:var(--light); white-space:nowrap;}
+  .soon{opacity:.5;}
+  .soon .more{color:var(--ink-3);}
+
+  footer{flex-shrink:0; text-align:center; padding:30px 28px 46px;}
+  footer p{font-size:13px; color:var(--ink-3); margin:0;}
+  footer a{color:var(--ink-2); text-decoration:none; border-bottom:1px solid var(--line);}
+  footer a:hover{border-bottom-color:var(--ink-2);}
+
+  @media (max-width:480px){
+    body{font-size:16px;}
+    .wrap{padding:76px 22px 40px;}
+    .word{font-size:33px;} .tag{font-size:16px;}
+    .glow{width:280px; height:280px;}
+    .app{padding:22px 22px;} .app h2{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="glow" aria-hidden="true"></div>
+      <h1 class="word">Luminy Studios</h1>
+      <p class="tag">Cozy, sensory apps that give a busy mind somewhere to settle.</p>
+    </header>
+
+    <main>
+      <p class="eyebrow">Apps</p>
+
+      <a class="app" href="/pentabloom/">
+        <h2>Pentabloom</h2>
+        <p>Swirl marble and fluid colour with your fingertips, then watch it slowly fade. Nothing to finish and nothing to win, just a quiet place to rest your attention. <span class="more">Support &amp; info &rarr;</span></p>
+      </a>
+
+      <div class="app soon" aria-hidden="true">
+        <h2>Bask</h2>
+        <p>Coming soon. <span class="more">&nbsp;</span></p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Luminy Studios &middot; <a href="mailto:studiosluminy@gmail.com">studiosluminy@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

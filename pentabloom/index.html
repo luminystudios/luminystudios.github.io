@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pentabloom — Support</title>
+<meta name="description" content="Support, FAQ, and contact for Pentabloom by Luminy Studios.">
+<style>
+  :root{
+    --bg:#1c1814; --ink:#f1e8d8; --ink-2:#b3a797; --ink-3:#857b6d;
+    --card:#26211b; --line:rgba(255,238,210,.09); --line-hover:rgba(255,238,210,.2);
+    --light:#e6b56b;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.62; font-size:17px; display:flex; flex-direction:column; overflow-x:hidden;
+  }
+  .wrap{max-width:600px; width:100%; margin:0 auto; padding:40px 28px 48px; flex:1 0 auto;}
+
+  .back{
+    font-family:ui-rounded,"SF Pro Rounded",-apple-system,sans-serif;
+    display:inline-block; font-size:13px; letter-spacing:.06em; color:var(--ink-3);
+    text-decoration:none; margin-bottom:64px;
+  }
+  .back:hover{color:var(--ink-2);}
+
+  header{position:relative; text-align:center; margin-bottom:64px;}
+  .glow{
+    position:absolute; left:50%; top:14px; width:300px; height:300px;
+    transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; z-index:0;
+    background:radial-gradient(circle, rgba(230,181,107,.22) 0%, rgba(230,181,107,.08) 40%, rgba(230,181,107,0) 70%);
+    animation:breathe 8s ease-in-out infinite;
+  }
+  @keyframes breathe{0%,100%{opacity:.7; transform:translate(-50%,-50%) scale(.92);}50%{opacity:1; transform:translate(-50%,-50%) scale(1.06);}}
+  @media (prefers-reduced-motion:reduce){ .glow{animation:none;} }
+  header > *{position:relative; z-index:1;}
+  .word{
+    font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+    font-weight:400; font-size:38px; color:var(--ink); margin:0; line-height:1.12;
+  }
+  .tag{font-size:18px; color:var(--ink-2); margin:16px auto 0; max-width:30ch;}
+
+  h2{
+    font-family:"Iowan Old Style",Palatino,Georgia,serif; font-weight:400; font-size:24px;
+    color:var(--ink); margin:48px 0 16px;
+  }
+  p{margin:0 0 16px; color:var(--ink-2);}
+  a{color:var(--light); text-decoration:none; border-bottom:1px solid rgba(230,181,107,.3);}
+  a:hover{border-bottom-color:var(--light);}
+
+  .contact{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:22px 24px; text-align:center; margin:0 0 14px;
+  }
+  .contact .label{
+    font-family:ui-rounded,"SF Pro Rounded",-apple-system,sans-serif;
+    text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:var(--ink-3); margin:0 0 8px;
+  }
+  .contact .mail{font-size:19px; margin:0; color:var(--ink);}
+  .contact .mail a{color:var(--light);}
+
+  details{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:0 22px; margin-bottom:10px; transition:border-color .2s ease;
+  }
+  details[open]{border-color:var(--line-hover);}
+  summary{
+    list-style:none; cursor:pointer; padding:18px 0; font-size:16px; color:var(--ink);
+    display:flex; justify-content:space-between; align-items:center; gap:16px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .plus{color:var(--light); font-size:20px; flex:none; transition:transform .2s ease; line-height:1;}
+  details[open] summary .plus{transform:rotate(45deg);}
+  details p{margin:0 0 18px; font-size:15px;}
+
+  footer{flex-shrink:0; text-align:center; padding:30px 28px 46px;}
+  footer p{font-size:13px; color:var(--ink-3); margin:0;}
+  footer a{color:var(--ink-2); border-bottom:1px solid var(--line);}
+  footer a:hover{border-bottom-color:var(--ink-2);}
+
+  @media (max-width:480px){
+    body{font-size:16px;}
+    .wrap{padding:32px 22px 40px;}
+    .word{font-size:32px;} .tag{font-size:16px;}
+    .glow{width:250px; height:250px;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <a class="back" href="../">&larr; Luminy Studios</a>
+
+    <header>
+      <div class="glow" aria-hidden="true"></div>
+      <h1 class="word">Pentabloom</h1>
+      <p class="tag">Swirl marble and fluid colour with your fingertips, then watch it slowly fade.</p>
+    </header>
+
+    <section>
+      <h2>Support</h2>
+      <p>Questions, a bug, or a bit of feedback? We're always glad to hear from you.</p>
+      <div class="contact">
+        <p class="label">Email</p>
+        <p class="mail"><a href="mailto:studiosluminy@gmail.com">studiosluminy@gmail.com</a></p>
+      </div>
+      <p>We read every message, and we usually reply within a day or two.</p>
+    </section>
+
+    <section>
+      <h2>A few common questions</h2>
+
+      <details>
+        <summary>What is Pentabloom Pro?<span class="plus" aria-hidden="true">+</span></summary>
+        <p>A one-time $3.99 unlock for every colour palette, plus the freedom to mix your own. It's yours for good, and it's enabled for Family Sharing.</p>
+      </details>
+
+      <details>
+        <summary>I bought Pro on another device. How do I get it here?<span class="plus" aria-hidden="true">+</span></summary>
+        <p>Open Pentabloom, head to the palette or upgrade screen, and tap Restore Purchases. As long as you're signed into the same Apple ID, Pro comes right back.</p>
+      </details>
+
+      <details>
+        <summary>Does Pentabloom collect my data?<span class="plus" aria-hidden="true">+</span></summary>
+        <p>No. Pentabloom collects no personal data, with no tracking and no analytics of any kind. Everything you make and every setting you choose stays on your device. You can read the full <a href="privacy.html">Privacy Policy</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I request a refund?<span class="plus" aria-hidden="true">+</span></summary>
+        <p>Purchases go through Apple, so refunds do too. You can request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+      </details>
+
+      <details>
+        <summary>What devices does it need?<span class="plus" aria-hidden="true">+</span></summary>
+        <p>Pentabloom runs on iPhone, with iOS 18 or later.</p>
+      </details>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Luminy Studios &middot; <a href="privacy.html">Privacy</a> &middot; <a href="mailto:studiosluminy@gmail.com">Contact</a></p>
+  </footer>
+
+</body>
+</html>
